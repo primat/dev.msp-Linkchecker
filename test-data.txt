@@ -1,0 +1,42 @@
+
+
+/*$item = array();
+$itmem[] = 'mailto:a';
+$itmem[] = '//';
+$itmem[] = '//ajax.googleapis.com';
+$itmem[] = '//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js';
+$itmem[] = '://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js';
+$itmem[] = ':/ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js';
+$itmem[] = ':';
+$itmem[] = 'a://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js';
+$itmem[] = '#hashtag';
+$itmem[] = '#http://www.example.com';
+$itmem[] = '#http%3A%2F%2Fwww.example.com';
+$itmem[] = '?url=http://www.example.com';
+$itmem[] = '?url=http://www.example.com#hashtag';
+$itmem[] = '?url=http://www.example.com#http://www.example.com';
+$itmem[] = '?url=http%3A%2F%2Fwww.example.com';
+$itmem[] = '?url=http:';
+$itmem[] = '?url=http:/';
+$itmem[] = '/?url=http:/';
+$itmem[] = 'http:';
+$itmem[] = 'http';
+$itmem[] = 'http:/';
+$itmem[] = 'http://';
+$itmem[] = 'http:///';
+$itmem[] = 'http://w';
+$itmem[] = 'http://www.example.com';
+$itmem[] = 'http://www.example.com/';
+$itmem[] = 'http://www.example.com/abc';
+$itmem[] = 'http://www.example.com/abc/';
+$itmem[] = 'http://www.example.com/abc.a';
+$itmem[] = 'http://www.example.com/abc.php/';
+
+echo '<pre>';
+foreach($itmem as $val)
+{
+	print_r(url_data($val));
+	echo "<br />";
+}
+echo '</pre>';
+exit;*/

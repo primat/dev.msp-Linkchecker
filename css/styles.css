@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* Reset and default */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td
+{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:Arial,Helvetica,sans-serif;vertical-align:baseline;text-indent:0}
+a,a:link{color:#069; text-decoration:none}
+a:visited{color:#036}
+a:hover, a:hover h3{text-decoration:underline}
+a:active{outline:none}
+blockquote:before,blockquote:after,q:before,q:after{content:""}
+blockquote,q{quotes:"" ""}
+body{line-height:1; color:#1a1c1e; background:#e0e0e0}
+em{font-style:italic}
+h2, h3{font-weight:bold}
+input[type=button],input[type=submit]{cursor:pointer}
+input[type=image]:focus{outline:0; -moz-outline-style:none}
+strong{font-weight:bold}
+table{border-collapse:separate;border-spacing:0}
+caption,th{text-align:left; font-weight:bold}
+td{text-align:left; font-weight:normal}
+ol,ul{margin-left:20px}
+ol,ul,p{margin-bottom:1.4em}
+ol ol,ul ul{margin-bottom:0}
+
+/* Headings */
+h1{font-size:28px; line-height:36px; margin:9px 0}
+
+/* Structure */
+.col_half{float:left; width:48%}
+.col_half.left{margin-right:3%; display:inline}
+.col_3_15{width:170px; float:left; margin: 0 14px; display:inline}
+
+.page{font-size:12px; line-height:18px; margin:0 auto; padding:14px; width:962px; position:relative; background-color:#fff;
+	box-shadow:1px 1px 2px #000; -moz-box-shadow:1px 1px 2px #000; -webkit-box-shadow:1px 1px 2px #000}
+
+/* Forms */
+.text_field, textarea{padding:4px 3px; font-size:12px; font-family:Tahoma, Geneva, sans-serif; line-height:18px; border-width:1px; width:100%;
+-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing: border-box}
+
+.form_2 label{font-weight:bold; text-shadow:-1px -1px #e0e0e0}
+.form_2 .radio_btn_label{font-weight:normal}
+.form_row{margin-bottom:14px}
+.form_row_2{border-top:1px dotted #6a6c6e; padding:10px 0; margin:0}
+	.first_child{border:none}
+	.last_child{margin-bottom:14px}
+.hint{font-weight:normal; font-size:.917em}
+
+#link_checker_form{background-color:#dadcde; padding:14px; width:600px}
+
+
+/* Tables */
+.table_1 td, .table_1 th{padding:3px 8px; text-align:left}
+.table_1 td:nth-child(4), .table_1 th:nth-child(4){text-align:center}
+.row_red{background-color:#FFAEAE}
+.row_yellow{background-color:#EEF66C}
+.row_green{background-color:#B0E57C}
+
+
+/* Other blocks */
+.urls_block{display:none}
+
+
+/* Simple classes */
+.clear{clear:both;height:0;font-size:1px;line-height:0;display:block}
+.clearfix:after{content:"."; display:block; height:0; clear:both; visibility:hidden}
+.errors{color:#ff3300}
+.width_half{width:50%}
+.width_quarter{width:25%}
+.width_tenth{width:10%}

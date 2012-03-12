@@ -1,0 +1,86 @@
+mailto:a
+	Array ( [scheme] => mailto [path] => a )
+ 
+//
+	Array ( [path] => // )
+
+//ajax.googleapis.com
+	Array ( [path] => //ajax.googleapis.com ) 
+
+//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
+	Array ( [path] => //ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js ) 
+
+://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
+	Blank page
+
+:/ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
+	Blank page
+
+:
+	Blank page
+
+a://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
+	Array ( [scheme] => a [host] => ajax.googleapis.com [path] => /ajax/libs/jquery/1.5.1/jquery.min.js )
+
+#hashtag
+	Array ( [fragment] => hashtag ) 
+
+#http://www.example.com
+	Array ( [host] => #http [path] => //www.example.com ) 
+
+#http%3A%2F%2Fwww.example.com
+	Array ( [fragment] => http%3A%2F%2Fwww.example.com ) 
+
+?url=http://www.example.com
+	Array ( [host] => ?url=http [path] => //www.example.com )
+
+?url=http%3A%2F%2Fwww.example.com
+	Array ( [query] => url=http%3A%2F%2Fwww.example.com )
+
+?url=http:
+	Array ( [query] => url=http: )
+
+?url=http:/
+	Array ( [host] => ?url=http [path] => / )
+
+http:
+	Array ( [scheme] => http ) 
+
+http
+	Array ( [path] => http )
+
+http:/
+	Array ( [scheme] => http [path] => / )
+
+http://
+	Blank page
+	
+http:///
+	Blank page
+
+http://w
+	Array ( [scheme] => http [host] => w )
+	
+http://www.example.com
+	Array ( [scheme] => http [host] => www.example.com )
+
+http://www.example.com/
+	Array ( [scheme] => http [host] => www.example.com [path] => / ) 
+
+http://www.example.com/abc
+	Array ( [scheme] => http [host] => www.example.com [path] => /abc )
+
+http://www.example.com/abc/
+	Array ( [scheme] => http [host] => www.example.com [path] => /abc/ )
+
+http://www.example.com/abc.a
+	Array ( [scheme] => http [host] => www.example.com [path] => /abc.a )
+	
+http://www.example.com/abc.php/
+	Array ( [scheme] => http [host] => www.example.com [path] => /abc.php/ )
+	
+
+- Be careful when parsing 'mailto:xxx...' type hrefs
+- Do not use parse_url for parsing hash tags
+- Do not use parse_url() for parsing scheme relative URLs
+- parse_url() is likely to fail when a URL is found in a query string or after a hash tag
