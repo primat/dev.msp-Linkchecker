@@ -1,1 +1,5 @@
 A linkchecker made in PHP
+
+I made this app to run it on websites that I worked on to find broken links. 
+Enter a URL, set a few options and the app crawls all web pages and parses the 
+HTML to produce lists of hrefs and pages which link to others.
